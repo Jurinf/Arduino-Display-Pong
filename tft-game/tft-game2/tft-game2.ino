@@ -578,25 +578,6 @@ void score() {
   tft.setTextColor(txt_color, txt_bg_color);
   tft.printAligned("Score:" + String(left_points) + "|" + String(right_points), gTextAlignTopCenter);
   tft.setRotation(2);
-/*0
-  left_points_code = left_points;
-
-  if (left_points_code >= 6){
-    dx = -1;
-    left_points_code = 0; 
-    } 
-  
-
-  
-
-
-  /*
-  points_code = right_points + left_points / 2; 
-
-  if(collides_r_wall or collides_l_wall == true and left_points | & right_points <= points_code){
-    dx = random(-1, 1);
-    }
-  */
 
   if (left_points >= win_points) {
       win();
@@ -679,12 +660,4 @@ void loop() {
   }
 }
 
-//*****************************************************************GAMA-END******************************************************************
-/*
-  todo nicht den ball schneller werden lassen wenn wenn man ihn trifft,
-  menu fertig machen,
-  bug weg machen das der ball nicht mehr am spieler hengen bleiben kann,
-  grüner button pause oder start,
-  im menu zurück,
-  schwarz und rot zum steuern von hoch und runter bei dem menu einstellung z.b. ball gechwiedingkeit hoch, ball festhalten können mit grün, beim verändern der settings beispiele,
-*/
+//*****************************************************************GAME-END******************************************************************
